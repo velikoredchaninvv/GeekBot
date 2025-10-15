@@ -6,10 +6,12 @@
 # Практические шаблоны — фабрики, сервисы, обработчики, примеры взаимодействия.
 
 class Human:
-    def __init__(self, name, age):
+    def __init__(self, name, age, city):
         self.name = name
         self.age = age
+        self.city = city
 
-obj_slava = Human('Slava', 49)
+obj_slava = Human('Slava', 49, 'Moscow')
 print(obj_slava.name)
 print(obj_slava.age)
+print(obj_slava.city)
