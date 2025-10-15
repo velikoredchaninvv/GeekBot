@@ -3,8 +3,8 @@ class BankAccount:
         self.balance = balance
     
     def deposite(self, amount):
-        new_balance = self.balance + amount
-        return new_balance
+        self.balance += amount
+        return self.balance
     
 money = BankAccount(1000)
 res = money.deposite(200)
